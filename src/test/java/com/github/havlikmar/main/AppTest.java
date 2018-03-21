@@ -1,4 +1,4 @@
-package com.github.havlikmar.DU1;
+package com.github.havlikmar.main;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
