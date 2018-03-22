@@ -41,6 +41,10 @@ public class Hra {
     	hadane = slovicka.get(nahodneSlovo.nextInt(slovicka.size())).getNazevAJ();
     }
     
+    public String getHadane() {
+    	return hadane;
+    }
+    
     public Integer getSpatne() {
         return spatne;
     }
