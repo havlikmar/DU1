@@ -1,7 +1,6 @@
-package com.github.havlikmar.logika;
+package com.github.havlikmar.DU1.logika;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -14,10 +13,23 @@ public class Hra {
 
 	public Hra() {
 		slovicka = new ArrayList<Slovo>();
+		
+		Slovo lion = new Slovo("lion", "lev");
+		slovicka.add(lion);
 		Slovo elephant = new Slovo("elephant", "slon");
 		slovicka.add(elephant);
-		Slovo dog = new Slovo("dog", "pes");
-		slovicka.add(dog);
+		Slovo horse = new Slovo("horse", "kůň");
+		slovicka.add(horse);
+		Slovo cow = new Slovo("cow", "kráva");
+		slovicka.add(cow);
+		Slovo camel = new Slovo("camel", "velboud");
+		slovicka.add(camel);
+		Slovo monkey = new Slovo("monkey", "opice");
+		slovicka.add(monkey);
+	}
+	
+	public List<Slovo> getSlovicka(){
+		return slovicka;
 	}
 	
     public boolean konecHry() {

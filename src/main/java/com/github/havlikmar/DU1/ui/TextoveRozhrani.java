@@ -1,6 +1,6 @@
-package com.github.havlikmar.ui;
+package com.github.havlikmar.DU1.ui;
 
-import com.github.havlikmar.logika.Hra;
+import com.github.havlikmar.DU1.logika.Hra;
 
 /**
  * Class TextoveRozhrani

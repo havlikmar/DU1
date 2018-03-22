@@ -1,4 +1,6 @@
-package com.github.havlikmar.logika;
+package com.github.havlikmar.DU1.logika;
+
+import javafx.scene.control.Tooltip;
 
 public class Slovo {
 	private String nazevAJ; 
