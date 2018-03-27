@@ -23,7 +23,7 @@ public class Start extends Application
     @Override
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
-    	loader.setLocation(getClass().getResource("../ui/window.fxml"));    	
+    	loader.setLocation(getClass().getResource("/ui/window.fxml"));    	
     	Parent root = loader.load();
 
     	Controller controller = loader.getController(); 	

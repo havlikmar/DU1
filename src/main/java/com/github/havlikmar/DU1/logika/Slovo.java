@@ -4,11 +4,13 @@ import javafx.scene.control.Tooltip;
 
 public class Slovo {
 	private String nazevAJ; 
-	private String nazevCJ; 
+	private String nazevCJ;
+	private String obr;
 	
-	public Slovo(String nazevAJ, String nazevCJ){
+	public Slovo(String nazevAJ, String nazevCJ, String obr){
 		this.nazevAJ = nazevAJ;
 		this.nazevCJ = nazevCJ;
+		this.obr = obr;
 	}
 	
 	public String getNazevAJ() {
@@ -17,5 +19,9 @@ public class Slovo {
 	
 	public String getNazevCJ() {
 		return nazevCJ;
+	}
+	
+	public String getObr() {
+		return obr;
 	}
 }

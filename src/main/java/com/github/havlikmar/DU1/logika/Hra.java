@@ -14,17 +14,17 @@ public class Hra {
 	public Hra() {
 		slovicka = new ArrayList<Slovo>();
 		
-		Slovo lion = new Slovo("lion", "lev");
+		Slovo lion = new Slovo("lion", "lev", "/ui/lev.jpg");
 		slovicka.add(lion);
-		Slovo elephant = new Slovo("elephant", "slon");
+		Slovo elephant = new Slovo("elephant", "slon", "/ui/slon.jpg");
 		slovicka.add(elephant);
-		Slovo horse = new Slovo("horse", "kůň");
+		Slovo horse = new Slovo("horse", "kůň", "/ui/kun.jpg");
 		slovicka.add(horse);
-		Slovo cow = new Slovo("cow", "kráva");
+		Slovo cow = new Slovo("cow", "kráva", "/ui/krava.jpg");
 		slovicka.add(cow);
-		Slovo camel = new Slovo("camel", "velboud");
+		Slovo camel = new Slovo("camel", "velboud", "/ui/velbloud.jpg");
 		slovicka.add(camel);
-		Slovo monkey = new Slovo("monkey", "opice");
+		Slovo monkey = new Slovo("monkey", "opice", "/ui/opice.jpg");
 		slovicka.add(monkey);
 	}
 	

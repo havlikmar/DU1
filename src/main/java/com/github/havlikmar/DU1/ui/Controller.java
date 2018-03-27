@@ -15,6 +15,8 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.Tooltip;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 
@@ -53,21 +55,57 @@ public class Controller {
 		slovicka = hra.getSlovicka();
 		
 		tlacitka.put(tlacitko1.getId(), slovicka.get(0));
+		String URL = slovicka.get(0).getObr();
+		Image obr = new Image (getClass().getResourceAsStream(URL));
+		ImageView image = new ImageView(obr);
+		image.setFitHeight(100);
+		image.setFitWidth(100);
+		tlacitko1.setGraphic(image);
 		tooltip1.setText(tlacitka.get("tlacitko1").getNazevCJ());
 		
 		tlacitka.put(tlacitko2.getId(), slovicka.get(1));
+		URL = slovicka.get(1).getObr();
+		obr = new Image (getClass().getResourceAsStream(URL));
+		image = new ImageView(obr);
+		image.setFitHeight(100);
+		image.setFitWidth(100);
+		tlacitko2.setGraphic(image);
 		tooltip2.setText(tlacitka.get("tlacitko2").getNazevCJ());
 		
 		tlacitka.put(tlacitko3.getId(), slovicka.get(2));
+		URL = slovicka.get(2).getObr();
+		obr = new Image (getClass().getResourceAsStream(URL));
+		image = new ImageView(obr);
+		image.setFitHeight(100);
+		image.setFitWidth(100);
+		tlacitko3.setGraphic(image);
 		tooltip3.setText(tlacitka.get("tlacitko3").getNazevCJ());
 		
 		tlacitka.put(tlacitko4.getId(), slovicka.get(3));
+		URL = slovicka.get(3).getObr();
+		obr = new Image (getClass().getResourceAsStream(URL));
+		image = new ImageView(obr);
+		image.setFitHeight(100);
+		image.setFitWidth(100);
+		tlacitko4.setGraphic(image);
 		tooltip4.setText(tlacitka.get("tlacitko4").getNazevCJ());
 		
 		tlacitka.put(tlacitko5.getId(), slovicka.get(4));
+		URL = slovicka.get(4).getObr();
+		obr = new Image (getClass().getResourceAsStream(URL));
+		image = new ImageView(obr);
+		image.setFitHeight(100);
+		image.setFitWidth(100);
+		tlacitko5.setGraphic(image);
 		tooltip5.setText(tlacitka.get("tlacitko5").getNazevCJ());
 		
 		tlacitka.put(tlacitko6.getId(), slovicka.get(5));
+		URL = slovicka.get(5).getObr();
+		obr = new Image (getClass().getResourceAsStream(URL));
+		image = new ImageView(obr);
+		image.setFitHeight(100);
+		image.setFitWidth(100);
+		tlacitko6.setGraphic(image);
 		tooltip6.setText(tlacitka.get("tlacitko6").getNazevCJ());
 		
 	}
