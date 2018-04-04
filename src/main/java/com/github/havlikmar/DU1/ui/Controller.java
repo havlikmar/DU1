@@ -17,15 +17,13 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseButton;
-import javafx.scene.input.MouseEvent;
 
 public class Controller {
 	private Map<String, Slovo> tlacitka;
 	private Hra hra;
 	private List<Slovo> slovicka;
 	private boolean hadame = false;
-	private Start start;
+	
 	@FXML private Button  	tlacitko1;
 	@FXML private Button  	tlacitko2;
 	@FXML private Button  	tlacitko3;
@@ -39,6 +37,13 @@ public class Controller {
 	@FXML private Tooltip  	tooltip4;
 	@FXML private Tooltip  	tooltip5;
 	@FXML private Tooltip  	tooltip6;
+	
+	@FXML private ImageView  	obr1;
+	@FXML private ImageView  	obr2;
+	@FXML private ImageView 	obr3;
+	@FXML private ImageView 	obr4;
+	@FXML private ImageView		obr5;
+	@FXML private ImageView  	obr6;
 	@FXML private TextArea	textVystup;
 	
 	public void odesliPrikaz() {
@@ -50,62 +55,43 @@ public class Controller {
 	
 	public void inicializuj(Hra hra, Start start) {
 		this.hra = hra;
-		this.start = start;
 		tlacitka = new HashMap<String, Slovo>();
 		slovicka = hra.getSlovicka();
 		
 		tlacitka.put(tlacitko1.getId(), slovicka.get(0));
 		String URL = slovicka.get(0).getObr();
 		Image obr = new Image (getClass().getResourceAsStream(URL));
-		ImageView image = new ImageView(obr);
-		image.setFitHeight(100);
-		image.setFitWidth(100);
-		tlacitko1.setGraphic(image);
+		obr1.setImage(obr);
 		tooltip1.setText(tlacitka.get("tlacitko1").getNazevCJ());
 		
 		tlacitka.put(tlacitko2.getId(), slovicka.get(1));
 		URL = slovicka.get(1).getObr();
 		obr = new Image (getClass().getResourceAsStream(URL));
-		image = new ImageView(obr);
-		image.setFitHeight(100);
-		image.setFitWidth(100);
-		tlacitko2.setGraphic(image);
+		obr2.setImage(obr);
 		tooltip2.setText(tlacitka.get("tlacitko2").getNazevCJ());
 		
 		tlacitka.put(tlacitko3.getId(), slovicka.get(2));
 		URL = slovicka.get(2).getObr();
 		obr = new Image (getClass().getResourceAsStream(URL));
-		image = new ImageView(obr);
-		image.setFitHeight(100);
-		image.setFitWidth(100);
-		tlacitko3.setGraphic(image);
+		obr3.setImage(obr);
 		tooltip3.setText(tlacitka.get("tlacitko3").getNazevCJ());
 		
 		tlacitka.put(tlacitko4.getId(), slovicka.get(3));
 		URL = slovicka.get(3).getObr();
 		obr = new Image (getClass().getResourceAsStream(URL));
-		image = new ImageView(obr);
-		image.setFitHeight(100);
-		image.setFitWidth(100);
-		tlacitko4.setGraphic(image);
+		obr4.setImage(obr);
 		tooltip4.setText(tlacitka.get("tlacitko4").getNazevCJ());
 		
 		tlacitka.put(tlacitko5.getId(), slovicka.get(4));
 		URL = slovicka.get(4).getObr();
 		obr = new Image (getClass().getResourceAsStream(URL));
-		image = new ImageView(obr);
-		image.setFitHeight(100);
-		image.setFitWidth(100);
-		tlacitko5.setGraphic(image);
+		obr5.setImage(obr);
 		tooltip5.setText(tlacitka.get("tlacitko5").getNazevCJ());
 		
 		tlacitka.put(tlacitko6.getId(), slovicka.get(5));
 		URL = slovicka.get(5).getObr();
 		obr = new Image (getClass().getResourceAsStream(URL));
-		image = new ImageView(obr);
-		image.setFitHeight(100);
-		image.setFitWidth(100);
-		tlacitko6.setGraphic(image);
+		obr6.setImage(obr);
 		tooltip6.setText(tlacitka.get("tlacitko6").getNazevCJ());
 		
 	}
